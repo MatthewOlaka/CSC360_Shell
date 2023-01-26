@@ -1,0 +1,7 @@
+all: gcc SEEsh.c -o SEEsh
+
+SEEsh: SEEsh.c
+	gcc -Wall SEEsh.c -Werror -o SEEsh
+
+clean:
+	-rm -rf *.o *.exe
